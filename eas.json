@@ -1,0 +1,16 @@
+{
+  "cli": { "version": ">= 11.0.0", "appVersionSource": "remote" },
+  "build": {
+    "device-apk": {
+      "distribution": "internal",
+      "android": { "buildType": "apk" }
+    },
+    "preview": { "distribution": "internal" },
+    "production": {
+      "distribution": "store",
+      "autoIncrement": true,
+      "android": { "buildType": "app-bundle" }
+    }
+  },
+  "submit": { "production": {} }
+}

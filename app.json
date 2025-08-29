@@ -1,0 +1,22 @@
+{
+  "expo": {
+    "name": "Mobile_App",
+    "slug": "Mobile_App",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "mobileapp",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": false,
+    "android": {
+      "package": "com.halil.workhours",
+      "edgeToEdgeEnabled": true
+    },
+    "plugins": [
+      "expo-router",
+      ["expo-splash-screen", { "resizeMode": "contain", "backgroundColor": "#ffffff" }]
+    ],
+    "extra": {
+      "eas": { "projectId": "8b9dab58-6810-41d1-bbdf-ea2a4b4caf15" }
+    }
+  }
+}
