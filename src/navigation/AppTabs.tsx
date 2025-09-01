@@ -9,6 +9,7 @@ import DailyHoursScreen from '../screens/hours/DailyHoursScreen';
 import MonthlySummaryScreen from '../screens/hours/MonthlySummaryScreen';
 import RequestsScreen from '../screens/hours/RequestsScreen';
 import ProfileScreen from '../screens/misc/ProfileScreen';
+import LeaderboardScreen from '../screens/misc/LeaderboardScreen';
 // ÜNS: RequestsScreen üçin dogry ýol
 
 const Tab = createBottomTabNavigator();
@@ -42,6 +43,9 @@ export default function AppTabs() {
             case 'Summary':
               name = focused ? 'stats-chart' : 'stats-chart-outline';
               break;
+            case 'Leaderboard':
+              name = focused ? 'trophy' : 'trophy-outline';
+              break;
             case 'Requests':
               // Ionicons-da “request” ýok — dokument ikonkasyny ulanýarys
               name = focused ? 'document-text' : 'document-text-outline';
@@ -63,6 +67,11 @@ export default function AppTabs() {
         name="Summary"
         component={MonthlySummaryScreen}
         options={{ title: 'Итоги', headerTitle: 'Итоги месяца' }}
+      />
+      <Tab.Screen
+        name="Leaderboard"
+        component={LeaderboardScreen}
+        options={{ title: 'Топ', headerTitle: 'Топ работники' }}
       />
       <Tab.Screen
         name="Requests"
